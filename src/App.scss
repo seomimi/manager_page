@@ -1,0 +1,89 @@
+@import "config";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: $FontNotoSansCJKkr;
+}
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 1920px;
+}
+header {
+  width: 1920px;
+  height: 60px;
+  padding: 16px 0 15px 30px;
+  background-color: #0067ff;
+  box-sizing: border-box;
+}
+section {
+  width: 1920px;
+  height: 1020px;
+  padding: 0.5px 0 0;
+  background-color: #f7f7fa;
+}
+#logo {
+  position: relative;
+  top: 3px;
+}
+.title {
+  width: 133px;
+  height: 29px;
+  margin: 0 8px 0 5px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.projectNum {
+  width: 119px;
+  height: 20px;
+  margin: 4px 0 5px 8px;
+  opacity: 0.8;
+  font-size: 14px;
+  font-weight: normal;
+  color: #ffffff;
+}
+
+// 팝업------------------------------------
+.popWrapper {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
+  z-index: 1;
+  .popBox {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 414px;
+    height: 162px;
+    margin-top: -81px;
+    margin-left: -207px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
+    text-align: center;
+    padding-top: 30px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: $FontNotoSansCJKkr;
+    .popUpClose {
+      width: 100%;
+      cursor: pointer;
+      font-weight: bold;
+      border-top: solid 1px #e6e8ed;
+      line-height: 42px;
+      color: #0067ff;
+    }
+  }
+}

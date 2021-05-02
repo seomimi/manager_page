@@ -1,0 +1,124 @@
+@import "config";
+
+.modalWrapper {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
+  z-index: 1;
+  .popBox {
+    width: 511px;
+    height: 594px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -297px;
+    margin-left: -255.5px;
+    padding: 46px 46px 30px 30px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
+    // text-align: center;
+    .modalTitle {
+      font-family: $FontNotoSansCJKkr;
+      font-size: 24px;
+      font-weight: bold;
+      color: #202225;
+    }
+    .modalClose {
+      width: 30px;
+      height: 30px;
+
+      text-align: center;
+      line-height: 30px;
+      cursor: pointer;
+      position: absolute;
+      top: 30px;
+      right: 30px;
+    }
+    .brandTable {
+      width: 451px;
+      height: 300px;
+      ul {
+        width: 451px;
+        height: 45px;
+        border-bottom: 1px solid #e6e8ed;
+        li {
+          float: left;
+          font-family: $FontNotoSansCJKkr;
+          font-size: 12px;
+          font-weight: normal;
+          color: #52565d;
+
+          .listText {
+            width: 330px;
+            height: 45px;
+            line-height: 45px;
+            box-sizing: border-box;
+            padding-left: 5px;
+            padding-right: 10px;
+            &.line2 {
+              padding-top: 5px;
+              line-height: initial;
+            }
+          }
+        }
+        .projectText > div {
+          float: left;
+        }
+        li:first-child {
+          width: 360px;
+        }
+        li:last-child {
+          width: 90px;
+        }
+        .reviewBtn {
+          width: 71px;
+          height: 32px;
+          border-radius: 4px;
+          background-color: #f7f7fa;
+          text-align: center;
+          line-height: 32px;
+          margin: 6px auto;
+          cursor: pointer;
+          color: #9da1a8;
+          &.active {
+            border: solid 1px #e6e8ed;
+            color: #202225;
+            box-sizing: border-box;
+            background-color: #fff;
+          }
+        }
+      }
+      ul:first-child {
+        background-color: #f7f7fa;
+        height: 32px;
+        border-top: 1px solid #e6e8ed;
+        li {
+          line-height: 32px;
+          text-align: center;
+        }
+        li:first-child {
+          border-right: 1px solid #e6e8ed;
+        }
+      }
+    }
+    .modalSubmit {
+      width: 92px;
+      height: 38px;
+      border-radius: 4px;
+      background-color: #0067ff;
+      font-size: 14px;
+      color: #ffffff;
+      font-family: $FontNotoSansCJKkr;
+      font-weight: 500;
+      text-align: center;
+      line-height: 38px;
+      cursor: pointer;
+      margin: 20px auto;
+    }
+  }
+}

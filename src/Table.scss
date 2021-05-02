@@ -1,0 +1,251 @@
+@import "config";
+
+.contents {
+  width: 1860px;
+  height: 730px;
+  margin: 39.5px 30px 0;
+  border-radius: 6px;
+  border: solid 1px #e6e8ed;
+  background-color: #ffffff;
+}
+.tapWrapper {
+  width: 100%;
+  height: 60px;
+  border-bottom: solid 1px #e6e8ed;
+
+  li {
+    float: left;
+    width: 240px;
+    height: 60px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    padding: 18px 0 18px 0;
+    font-family: $FontNotoSansCJKkr;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #9da1a8;
+    border-right: solid 1px #e6e8ed;
+    cursor: pointer;
+  }
+  li.active {
+    background-color: #f0f3ff;
+    color: #0067ff;
+    border: 0;
+  }
+}
+
+.tableWrapper {
+  width: 1780px;
+  height: 545px;
+  margin: 24px 40px 20px;
+  padding: 0 1px 1px;
+  border: solid 1px #e6e8ed;
+  background-color: #ffffff;
+}
+.tableCommon {
+  width: 100%;
+  height: 50px;
+  li {
+    float: left;
+    font-family: $FontNotoSansCJKkr;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: center;
+    width: 50px;
+    box-sizing: border-box;
+    border-right: solid 1px #e6e8ed;
+  }
+  .li_1 {
+    width: 49px;
+    height: 49px;
+  }
+  .li_4,
+  .li_6 {
+    width: 64px;
+  }
+  .li_5 {
+    width: 204px;
+  }
+  .li_9 {
+    width: 163px;
+  }
+  .li_10 {
+    width: 585px;
+    position: relative;
+    height: 48px;
+  }
+  .li_11 {
+    width: 81px;
+  }
+  .li_12 {
+    width: 90px;
+  }
+  .li_13 {
+    width: 77px;
+  }
+  .li_14 {
+    width: 95px;
+    height: 49px;
+  }
+  .li_15 {
+    width: 108px;
+    border-right: 0;
+  }
+
+  li .checkBox {
+    width: 15px;
+    height: 15px;
+    margin: 17px auto;
+    cursor: pointer;
+    border: 1px solid #999;
+    box-sizing: border-box;
+    &.active {
+      background-color: lightblue;
+    }
+  }
+}
+
+.tableTitle {
+  height: 38px;
+  background-color: #f7f7fa;
+  border-bottom: solid 1px #e6e8ed;
+  overflow: hidden;
+  li {
+    color: #52565d;
+    line-height: 38px;
+  }
+  .li_1 {
+    height: 39px;
+    .checkBox {
+      margin: 12px auto;
+    }
+  }
+}
+
+.tableLists {
+  width: 100%;
+  height: 505px;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  .tableCommon:hover {
+    background-color: #f7faff;
+  }
+  li {
+    line-height: 48px;
+    border-bottom: solid 1px #e6e8ed;
+  }
+  .starIcon {
+    color: #ddd;
+    cursor: pointer;
+    &.active {
+      color: #ffd900;
+    }
+  }
+  .messageBox {
+    position: absolute;
+    width: 560px;
+    box-sizing: border-box;
+    height: 32px;
+    margin: 6px 12px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: solid 1px #e6e8ed;
+    background-color: #ffffff;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: initial;
+    p {
+      line-height: 20px;
+      width: 540px;
+      height: 20px;
+      margin: 0;
+      text-overflow: ellipsis;
+      background-color: #fff;
+      &.overText {
+        width: 500px;
+        overflow: hidden;
+        white-space: nowrap;
+        cursor: pointer;
+      }
+      &.openText {
+        height: auto;
+        white-space: initial;
+      }
+    }
+    span {
+      right: 15px;
+      position: absolute;
+      top: 5px;
+      color: #ccc;
+      cursor: pointer;
+    }
+    &.openText {
+      z-index: 1;
+      height: auto;
+      border: solid 2px #ccc;
+    }
+  }
+  .snsBtn {
+    width: 70px;
+    height: 32px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: #00c73c;
+    line-height: 32px;
+    margin: 8px auto;
+    cursor: pointer;
+    color: #fff;
+  }
+  .myBrand {
+    cursor: pointer;
+    color: #0067ff;
+    font-family: $FontNotoSansCJKkr;
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
+.list {
+  width: 100%;
+  height: 800px;
+  background-color: cadetblue;
+}
+.checkSelector {
+  margin: 0 auto;
+  width: 104px;
+  height: 50px;
+  border-radius: 4px;
+  background-color: #f7f7fa;
+  cursor: pointer;
+  font-family: $FontNotoSansCJKkr;
+  line-height: 50px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #9da1a8;
+  &.active {
+    background-color: #0067ff;
+    color: #fff;
+  }
+}
+.disabled {
+  pointer-events: none;
+  background-color: #eee;
+  color: #555;
+  opacity: 0.6;
+  border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+}
